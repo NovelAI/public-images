@@ -23,9 +23,9 @@ jobs:
 
       - name: Print image name
         run: |
-          echo ghcr.io/novelai/ci-minio:${GITHUB_SHA::7}
+          echo ghcr.io/novelai/ci-minio-v2:${GITHUB_SHA::7}
 
       - name: Push image
         run: |
-          docker tag ci-minio ghcr.io/novelai/ci-minio:${GITHUB_SHA::7}
-          docker push ghcr.io/novelai/ci-minio:${GITHUB_SHA::7}
+          docker tag ci-minio ghcr.io/novelai/ci-minio-v2:${GITHUB_SHA::7}
+          docker push ghcr.io/novelai/ci-minio-v2:${GITHUB_SHA::7}
