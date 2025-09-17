@@ -4,7 +4,6 @@ on: workflow_dispatch
 jobs:
   publish:
     name: Build and publish Docker image
-    runs-on: 16-cpu-github-hosted
     environment: build
     steps:
 
