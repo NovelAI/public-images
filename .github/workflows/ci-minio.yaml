@@ -4,6 +4,7 @@ on: workflow_dispatch
 jobs:
   publish:
     name: Build and publish Docker image
+    runs-on: ubuntu-latest
     environment: build
     steps:
 
